@@ -9,6 +9,15 @@ class Stack {
     public:
         Stack(int length = 10) : m_length(length), m_clength(0), m_stack(new int[length])
         {
+            reset();
+            std::cout << "Stack is created and is empty.\n";
+        }
+    
+        void reset() {
+            for (int i=0; i<m_length; ++i) {
+                *(m_stack + i) = 0;
+            }
+            m_clength = 0;
         }
 
         bool push(int num) {
