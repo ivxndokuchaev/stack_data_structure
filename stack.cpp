@@ -57,13 +57,13 @@ int main() {
     stack.push(5);
     stack.print();
 
-    stack.push(666);
+    stack.push(6);
 
     stack.pop();
     stack.pop();
     stack.print();
 
-    stack.push(666);
+    stack.push(10);
     stack.print();
 
     return 0;
